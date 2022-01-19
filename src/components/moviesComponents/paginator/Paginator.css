@@ -1,0 +1,96 @@
+.Paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 9px;
+  border-bottom: 1px #4d4d4d solid;
+  margin-top: 100px;
+}
+
+.Paginator li {
+  background-color: #0e0e0e;
+  font-size: 12px;
+  width: 37px;
+  height: 37px;
+  margin: 0px 7px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  color: white;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.Paginator li:hover {
+  background-color: crimson;
+}
+
+@media (max-width: 500px) {
+  .Paginator li {
+    margin: 0px 4px;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 500px) and (max-width: 340px) {
+  .Paginator li {
+    margin: 0px 3px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.Paginator .page-linkm {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+@media (max-width: 500px) {
+  .Paginator .page-linkm {
+    font-size: 10px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 500px) and (max-width: 340px) {
+  .Paginator .page-linkm {
+    font-size: 9px;
+    line-height: 23px;
+  }
+}
+
+.Paginator .prev {
+  background-color: #0e0e0e;
+  border: 0px;
+}
+
+.Paginator .next {
+  border: 0px;
+}
+
+.Paginator .break {
+  border: 0px;
+  cursor: default;
+  background-color: #1f1f1f;
+}
+
+.Paginator .break:hover {
+  background-color: #1f1f1f;
+}
+
+.Paginator .break-linkm {
+  text-decoration: none;
+  color: white;
+  pointer-events: none;
+}
+
+.Paginator .activem {
+  background-color: crimson;
+}
+/*# sourceMappingURL=Paginator.css.map */

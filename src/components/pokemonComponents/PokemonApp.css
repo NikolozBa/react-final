@@ -1,0 +1,94 @@
+.pokemonCard {
+  width: 200px;
+  margin: 20px;
+}
+
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.PokemonApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.PokemonApp > a {
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.PokemonApp > a:hover {
+  color: white;
+  background-color: #b31131;
+}
+
+@media (max-width: 600px) {
+  .PokemonApp > button {
+    width: 75% !important;
+  }
+}
+
+.rock {
+  background-color: #945151 !important;
+}
+
+.ghost {
+  background-color: #f7f7f7 !important;
+}
+
+.electric {
+  background-color: #ffffa1 !important;
+}
+
+.bug {
+  background-color: #F6D6A7 !important;
+}
+
+.poison {
+  background-color: #e0a7f6 !important;
+}
+
+.normal {
+  background-color: #F4F4F4 !important;
+}
+
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863) !important;
+}
+
+.fire {
+  background-color: #FBE3DF !important;
+}
+
+.grass {
+  background-color: #E2F9E1 !important;
+}
+
+.water {
+  background-color: #E0F1FD !important;
+}
+/*# sourceMappingURL=PokemonApp.css.map */

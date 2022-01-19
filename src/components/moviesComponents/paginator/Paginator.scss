@@ -1,0 +1,76 @@
+.Paginator {
+    display: flex;
+    list-style-type: none;
+    padding: 9px;
+    border-bottom: 1px rgb(77, 77, 77) solid;
+    margin-top: 100px;
+
+    li {
+        background-color: rgb(14, 14, 14);
+        font-size: 12px;
+        width: 37px;
+        height: 37px;
+        margin: 0px 7px;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 35px;
+        cursor: pointer;
+        color: white;
+        transition-duration: 0.1s;
+        &:hover{
+            background-color: crimson;
+        }
+
+        @media (max-width: 500px) {
+            margin: 0px 4px;
+            width: 26px;
+            height: 26px;
+            @media (max-width: 340px) {
+                margin: 0px 3px;
+                width: 22px;
+                height: 22px;
+            }
+
+        }
+    }
+
+    .page-linkm{
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        color: white;
+        font-family: Montserrat;
+        @media (max-width: 500px) {
+            font-size: 10px;
+            line-height: 26px;
+            @media (max-width: 340px) {
+                font-size: 9px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    .prev{
+        background-color: rgb(14, 14, 14);
+        border: 0px;
+    }
+    .next{
+        border: 0px;
+    }
+    .break{
+        border: 0px;
+        cursor: default;
+        background-color: #1f1f1f;
+        &:hover{
+            background-color: #1f1f1f;
+        }
+    }
+    .break-linkm{
+        text-decoration: none;
+        color: white;
+        pointer-events: none;
+    }
+    .activem{
+        background-color: crimson;
+    }
+}

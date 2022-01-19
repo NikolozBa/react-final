@@ -1,0 +1,46 @@
+.Info {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 700px) {
+        flex-direction: column-reverse;
+        height: 90vh;
+        justify-content: center;
+        
+    }
+
+    >div{
+        >h1{
+            font-size: 50px;
+            font-family: Roboto;
+            font-weight: bold;
+            @media (max-width: 700px) {
+                font-size: 40px;
+                @media (max-width: 400px) {
+                    font-size: 30px;
+                }
+            }
+        }
+        >p:nth-child(2){
+            color: rgb(172, 172, 172);
+            margin-bottom: 30px;
+        }
+        >p{
+            font-family: Montserrat;
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
+        }
+    }
+    >img{
+        width: 33%;
+        @media (max-width: 700px) {
+            width: 45%;
+            margin-bottom: 30px;
+            @media (max-width: 400px) {
+                width: 70%;
+            }
+        }
+    }
+}

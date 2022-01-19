@@ -1,0 +1,90 @@
+.Banner {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 880px) {
+  .Banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Banner > img {
+  width: 45%;
+  margin-right: 100px;
+}
+
+@media (max-width: 880px) {
+  .Banner > img {
+    margin: 0px;
+    width: 55%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 880px) and (max-width: 520px) {
+  .Banner > img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 880px) and (max-width: 520px) and (max-width: 350px) {
+  .Banner > img {
+    width: 90%;
+  }
+}
+
+.Banner > div > h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+@media (max-width: 880px) {
+  .Banner > div > h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 880px) and (max-width: 520px) {
+  .Banner > div > h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 880px) and (max-width: 520px) and (max-width: 350px) {
+  .Banner > div > h1 {
+    font-size: 30px;
+  }
+}
+
+.Banner > div > p {
+  color: #acacac;
+  font-family: Montserrat;
+}
+
+.Banner > div > a {
+  background-color: #4646ff;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  font-family: Roboto;
+  color: white;
+  text-decoration: none;
+}
+
+.Banner > div > a:hover {
+  background-color: #1b1bff;
+}
+/*# sourceMappingURL=Banner.css.map */

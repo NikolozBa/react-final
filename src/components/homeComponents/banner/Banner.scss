@@ -1,0 +1,59 @@
+.Banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 880px) {
+        flex-direction: column;
+    }
+
+    > img {
+        width: 45%;
+        margin-right: 100px;
+        @media (max-width: 880px) {
+            margin: 0px;
+            width: 55%;
+            margin-bottom: 40px;
+            @media (max-width: 520px) {
+                width: 70%;
+                @media (max-width: 350px) {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    > div {
+        > h1 {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 60px;
+            @media (max-width: 880px) {
+                font-size: 50px;
+                @media (max-width: 520px) {
+                    font-size: 40px;
+                    @media (max-width: 350px) {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        > p {
+            color: rgb(172, 172, 172);
+            font-family: Montserrat;
+        }
+
+        > a {
+            background-color: rgb(70, 70, 255);
+            border-radius: 5px;
+            font-size: 14px;
+            padding: 10px;
+            font-family: Roboto;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                background-color: rgb(27, 27, 255);
+            }
+        }
+    }
+}
